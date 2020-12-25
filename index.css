@@ -1,0 +1,280 @@
+.container {
+    padding: 7% 0;
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.clock {
+    position: relative;
+    height: 100%;
+}
+.clock__big-tick {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 4px;
+    height: 50%;
+    width: 10px;
+    transform-origin: bottom center;
+}
+.clock__big-tick--1 {
+    transform: translateX(-50%) rotate(0deg);
+    background-image: linear-gradient(#f20d0d 1%, transparent 14%);
+}
+.clock__big-tick--2 {
+    transform: translateX(-50%) rotate(30deg);
+    background-image: linear-gradient(#f2800d 1%, transparent 14%);
+}
+.clock__big-tick--3 {
+    transform: translateX(-50%) rotate(60deg);
+    background-image: linear-gradient(#f2f20d 1%, transparent 14%);
+}
+.clock__big-tick--4 {
+    transform: translateX(-50%) rotate(90deg);
+    background-image: linear-gradient(#80f20d 1%, transparent 14%);
+}
+.clock__big-tick--5 {
+    transform: translateX(-50%) rotate(120deg);
+    background-image: linear-gradient(#0df20d 1%, transparent 14%);
+}
+.clock__big-tick--6 {
+    transform: translateX(-50%) rotate(150deg);
+    background-image: linear-gradient(#0df280 1%, transparent 14%);
+}
+.clock__big-tick--7 {
+    transform: translateX(-50%) rotate(180deg);
+    background-image: linear-gradient(#0df2f2 1%, transparent 14%);
+}
+.clock__big-tick--8 {
+    transform: translateX(-50%) rotate(210deg);
+    background-image: linear-gradient(#0d80f2 1%, transparent 14%);
+}
+.clock__big-tick--9 {
+    transform: translateX(-50%) rotate(240deg);
+    background-image: linear-gradient(#0d0df2 1%, transparent 14%);
+}
+.clock__big-tick--10 {
+    transform: translateX(-50%) rotate(270deg);
+    background-image: linear-gradient(#800df2 1%, transparent 14%);
+}
+.clock__big-tick--11 {
+    transform: translateX(-50%) rotate(300deg);
+    background-image: linear-gradient(#f20df2 1%, transparent 14%);
+}
+.clock__big-tick--12 {
+    transform: translateX(-50%) rotate(330deg);
+    background-image: linear-gradient(#f20d80 1%, transparent 14%);
+}
+.clock__small-tick {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42) 1%, transparent 9%);
+    height: 48.7%;
+    width: 1px;
+    transform-origin: bottom center;
+}
+.clock__small-tick--1 {
+    transform: translateX(-50%) rotate(6deg);
+}
+.clock__small-tick--2 {
+    transform: translateX(-50%) rotate(12deg);
+}
+.clock__small-tick--3 {
+    transform: translateX(-50%) rotate(18deg);
+}
+.clock__small-tick--4 {
+    transform: translateX(-50%) rotate(24deg);
+}
+.clock__small-tick--5 {
+    transform: translateX(-50%) rotate(36deg);
+}
+.clock__small-tick--6 {
+    transform: translateX(-50%) rotate(42deg);
+}
+.clock__small-tick--7 {
+    transform: translateX(-50%) rotate(48deg);
+}
+.clock__small-tick--8 {
+    transform: translateX(-50%) rotate(54deg);
+}
+.clock__small-tick--9 {
+    transform: translateX(-50%) rotate(66deg);
+}
+.clock__small-tick--10 {
+    transform: translateX(-50%) rotate(72deg);
+}
+.clock__small-tick--11 {
+    transform: translateX(-50%) rotate(78deg);
+}
+.clock__small-tick--12 {
+    transform: translateX(-50%) rotate(84deg);
+}
+.clock__small-tick--13 {
+    transform: translateX(-50%) rotate(96deg);
+}
+.clock__small-tick--14 {
+    transform: translateX(-50%) rotate(102deg);
+}
+.clock__small-tick--15 {
+    transform: translateX(-50%) rotate(108deg);
+}
+.clock__small-tick--16 {
+    transform: translateX(-50%) rotate(114deg);
+}
+.clock__small-tick--17 {
+    transform: translateX(-50%) rotate(126deg);
+}
+.clock__small-tick--18 {
+    transform: translateX(-50%) rotate(132deg);
+}
+.clock__small-tick--19 {
+    transform: translateX(-50%) rotate(138deg);
+}
+.clock__small-tick--20 {
+    transform: translateX(-50%) rotate(144deg);
+}
+.clock__small-tick--21 {
+    transform: translateX(-50%) rotate(156deg);
+}
+.clock__small-tick--22 {
+    transform: translateX(-50%) rotate(162deg);
+}
+.clock__small-tick--23 {
+    transform: translateX(-50%) rotate(168deg);
+}
+.clock__small-tick--24 {
+    transform: translateX(-50%) rotate(174deg);
+}
+.clock__small-tick--25 {
+    transform: translateX(-50%) rotate(186deg);
+}
+.clock__small-tick--26 {
+    transform: translateX(-50%) rotate(192deg);
+}
+.clock__small-tick--27 {
+    transform: translateX(-50%) rotate(198deg);
+}
+.clock__small-tick--28 {
+    transform: translateX(-50%) rotate(204deg);
+}
+.clock__small-tick--29 {
+    transform: translateX(-50%) rotate(216deg);
+}
+.clock__small-tick--30 {
+    transform: translateX(-50%) rotate(222deg);
+}
+.clock__small-tick--31 {
+    transform: translateX(-50%) rotate(228deg);
+}
+.clock__small-tick--32 {
+    transform: translateX(-50%) rotate(234deg);
+}
+.clock__small-tick--33 {
+    transform: translateX(-50%) rotate(246deg);
+}
+.clock__small-tick--34 {
+    transform: translateX(-50%) rotate(252deg);
+}
+.clock__small-tick--35 {
+    transform: translateX(-50%) rotate(258deg);
+}
+.clock__small-tick--36 {
+    transform: translateX(-50%) rotate(264deg);
+}
+.clock__small-tick--37 {
+    transform: translateX(-50%) rotate(276deg);
+}
+.clock__small-tick--38 {
+    transform: translateX(-50%) rotate(282deg);
+}
+.clock__small-tick--39 {
+    transform: translateX(-50%) rotate(288deg);
+}
+.clock__small-tick--40 {
+    transform: translateX(-50%) rotate(294deg);
+}
+.clock__small-tick--41 {
+    transform: translateX(-50%) rotate(306deg);
+}
+.clock__small-tick--42 {
+    transform: translateX(-50%) rotate(312deg);
+}
+.clock__small-tick--43 {
+    transform: translateX(-50%) rotate(318deg);
+}
+.clock__small-tick--44 {
+    transform: translateX(-50%) rotate(324deg);
+}
+.clock__small-tick--45 {
+    transform: translateX(-50%) rotate(336deg);
+}
+.clock__small-tick--46 {
+    transform: translateX(-50%) rotate(342deg);
+}
+.clock__small-tick--47 {
+    transform: translateX(-50%) rotate(348deg);
+}
+.clock__small-tick--48 {
+    transform: translateX(-50%) rotate(354deg);
+}
+
+.sec-hand,
+.small-hand,
+.big-hand,
+.center-up,
+.center-bottom {
+    position: absolute;
+}
+
+.sec-hand {
+    left: 50%;
+    bottom: 50%;
+    width: 1.5px;
+    transform-origin: bottom;
+    height: 41%;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.small-hand {
+    left: 50%;
+    bottom: 50%;
+    width: 4px;
+    height: 20%;
+    transform-origin: bottom;
+    background-color: black;
+}
+
+.big-hand {
+    left: 50%;
+    bottom: 50%;
+    width: 3px;
+    height: 39%;
+    transform-origin: bottom;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.center-bottom,
+.center-up {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-bottom {
+    width: 7.5rem;
+    height: 7.5rem;
+    box-shadow: -2px -1px 3px -2px rgba(0, 0, 0, 0.8765425), -1px -1px 3px -2px rgba(0, 0, 0, 0.4), inset 0 0 0 2.95rem rgba(0, 0, 0, 0.02), inset 0 0 0 2.75rem rgba(0, 0, 0, 0.086), inset 0 0 0 2.55rem rgba(0, 0, 0, 0.04);
+    border-radius: 100px;
+    background-color: none;
+}
+
+.center-up {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: black;
+    box-shadow: 0 0 0 4px #bf4040, 0 0 0 6px #8d8d8d, 0 0 0 7px rgba(0, 0, 0, 0.55);
+    border-radius: 100px;
+}
