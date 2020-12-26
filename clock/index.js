@@ -1,3 +1,5 @@
+const anime = require('animejs');
+const _ = require('lodash');
 const container = document.querySelector('.container');
 const containerHeight = _.round(container.getBoundingClientRect().height);
 
@@ -43,13 +45,6 @@ let smallRotate = _.round(hours % 12 * 30 + 30 * mins / 60);
 
 console.log(bigRotate)
 
-
-// let secRotate = 6;
-// let smallRotate = 30 + 6 * _.random(50);
-// let bigRotate = 30 + 6 * _.random(50);
-
-////////ANIME JS
-
 function handleSec() {
     anime({
         targets: '.sec-hand',
@@ -87,9 +82,6 @@ function handleSmall(start = 0) {
             handleSmall(start + 30)}
     })
 }
-
-
-/////GSAP
 
 
 function handleSecGSAP() {
