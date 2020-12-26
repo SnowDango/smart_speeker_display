@@ -5,9 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && electron .",
-    "build:mac": "electron-builder --mac --x64",
-    "build:win": "electron-builder --win --x64"
+    "start": "tsc && electron ."
   },
   "keywords": [],
   "author": "",
