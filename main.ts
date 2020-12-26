@@ -1,6 +1,5 @@
 import {app,BrowserWindow} from 'electron';
 
-
 let win: BrowserWindow | null = null;
 
 function createWindow () {
