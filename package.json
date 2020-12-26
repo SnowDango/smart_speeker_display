@@ -2,7 +2,7 @@
   "name": "smart_speeker_display",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/main.js",
+  "main": "public/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && electron ."
@@ -22,6 +22,7 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "gsap": "^3.5.1",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "npx": "^10.2.2"
   }
 }
