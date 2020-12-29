@@ -7,3 +7,8 @@
 * display app -get-> apiserver -> display appでapiの認識結果を定期的に監視
 * 上記にてgetした値が変化していたらdisplay表示を変更
 
+# 画面実装想定
+* 時計
+* 天気
+
+
