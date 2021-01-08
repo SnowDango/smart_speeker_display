@@ -10,7 +10,7 @@ builder.build({
                 {
                     target: "tar.gz",
                     arch:[
-                        "ia32",
+                        "x64",
                     ]
                 }
             ]
