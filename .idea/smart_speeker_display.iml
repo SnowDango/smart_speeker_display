@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="weather-icons" level="application" />
+    <orderEntry type="library" name="feather-icons" level="application" />
+    <orderEntry type="library" name="b5722f1bf7" level="application" />
   </component>
 </module>
