@@ -26,8 +26,8 @@ function initView() {
 }
 
 function openThread(){
-    let workerFarm = require('electron-worker-farm'),
-        workers = workerFarm(require.resolve('./callApiThread'))
+    const workerFarm = require('electron-worker-farm')
+    let workers = workerFarm(require.resolve('./callApiThread'))
     const callbackFunc = (state: string,any: string) => {
         console.log(state);
         windows.forEach(win => {
