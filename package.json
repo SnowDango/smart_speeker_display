@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "electron-worker-farm": "^1.1.0",
     "feather-icons": "^4.28.0",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
