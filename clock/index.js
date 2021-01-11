@@ -3,6 +3,12 @@ const _ = require('lodash');
 const container = document.querySelector('.container');
 const containerHeight = _.round(container.getBoundingClientRect().height);
 
+window.addEventListener('load', startCallApi);
+
+function startCallApi(){
+
+}
+
 function addSVGTicks() {
     const strokeWidth = 10;
     const stroke = 'black';

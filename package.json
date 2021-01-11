@@ -2,7 +2,7 @@
   "name": "smart_speeker_display",
   "version": "1.0.0",
   "description": "",
-  "main": "public/main.js",
+  "main": "public/index.js",
   "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,10 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "electron-thread": "^1.1.1",
+    "electron-worker-farm": "^1.1.0",
     "feather-icons": "^4.28.0",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
@@ -29,6 +32,8 @@
     "npx": "^10.2.2",
     "request": "^2.88.2",
     "snap": "^1.1.0",
-    "snapsvg": "^0.5.1"
+    "snapsvg": "^0.5.1",
+    "threads": "^1.6.3",
+    "tiny-worker": "^2.3.0"
   }
 }

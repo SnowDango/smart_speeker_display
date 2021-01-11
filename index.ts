@@ -1,4 +1,6 @@
 import {app,BrowserWindow} from 'electron';
+import {worker} from "cluster";
+
 
 let win: BrowserWindow | null = null;
 let isObserverActive: boolean = true;
@@ -20,27 +22,20 @@ function createWindow () {
     win.on('closed', () => {
         win = null;
     });
+    openThread();
 }
 
-function setupApp(){
-    createWindow();
-    observerApi().catch(error => alert(error));
-}
+function openThread(){
+    let workerFarm = require('electron-worker-farm'),
+        workers = workerFarm(require.resolve('./callApiThread')),
+        ret = 0
 
-async function　observerApi(){
-    while (isObserverActive){
-        const newApiData: string = await apiRequest();
-        if(apiData !== newApiData){
-            //TODO　画面の切り替え
-        }
+    const callbackFunc = (string: string) => {
+        console.log(string);
+        workers(callbackFunc);
     }
+    workers(callbackFunc);
 }
-
-async function apiRequest(): Promise<string>{
-    //TODO api request
-    return  "";
-}
-
 //開いた時
 app.on('ready', createWindow);
 
@@ -58,5 +53,4 @@ app.on('activate', () => {
         createWindow();
     }
 });
-
 
