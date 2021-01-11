@@ -1,4 +1,5 @@
 import {app,BrowserWindow} from 'electron';
+import {worker} from "cluster";
 
 let win: BrowserWindow | null = null;
 let isObserverActive: boolean = true;
@@ -35,7 +36,9 @@ function openCallApiThread(){
                  win?.loadFile('clock/index.html');
              }
          }
-         workers(callbackApi);
+         if(isObserverActive) {
+             workers(callbackApi);
+         }
     }
     workers(callbackApi);
 }
