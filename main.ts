@@ -1,10 +1,12 @@
 import {app,BrowserWindow} from 'electron';
+import {worker} from "cluster";
 
 let win: BrowserWindow | null = null;
 let isObserverActive: boolean = true;
-let apiData: string = "";
+let stateData: string = "";
+let anyData: string = "";
 
-function createWindow () {
+function createWindow() {
     win = new BrowserWindow({
         width: 1920,
         height: 1080,
@@ -16,29 +18,29 @@ function createWindow () {
         }
     });
     win.loadFile('clock/index.html').catch(error => console.log(error));
-    win.webContents.openDevTools();
     win.on('closed', () => {
         win = null;
     });
+    openCallApiThread();
 }
 
-function setupApp(){
-    createWindow();
-    observerApi().catch(error => alert(error));
-}
+function openCallApiThread(){
+    const workerFarm = require('electron-worker-farm');
+    const workers = workerFarm(require.resolve('./callApiThread'));
 
-async function　observerApi(){
-    while (isObserverActive){
-        const newApiData: string = await apiRequest();
-        if(apiData !== newApiData){
-            //TODO　画面の切り替え
-        }
+    const callbackApi = (state: string,any: string) => {
+         if(stateData !== state || anyData !== any){
+             if(state === "検索"){
+                 win?.loadURL("https://www.google.com/search?q="+any);
+             }else if(state === "時計"){
+                 win?.loadFile('clock/index.html');
+             }
+         }
+         if(isObserverActive) {
+             workers(callbackApi);
+         }
     }
-}
-
-async function apiRequest(): Promise<string>{
-    //TODO api request
-    return  "";
+    workers(callbackApi);
 }
 
 //開いた時
