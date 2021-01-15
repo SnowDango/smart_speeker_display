@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e250b2fd-78d6-487c-b0b3-c73bfb63ce56" name="Default Changelist" comment="add stop observer">
+    <list default="true" id="e250b2fd-78d6-487c-b0b3-c73bfb63ce56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callApiThread.ts" beforeDir="false" afterPath="$PROJECT_DIR$/callApiThread.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <updated>1610385773219</updated>
       <workItem from="1610385775067" duration="520000" />
       <workItem from="1610386410626" duration="4302000" />
-      <workItem from="1610684775283" duration="1550000" />
+      <workItem from="1610684775283" duration="7327000" />
     </task>
     <task id="LOCAL-00001" summary="add callapi and observer">
       <created>1610388088984</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610388939892</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add calender view">
+      <created>1610688076055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610688076056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add callapi and observer" />
     <MESSAGE value="add stop observer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stop observer" />
+    <MESSAGE value="add calender view" />
+    <option name="LAST_COMMIT_MESSAGE" value="add calender view" />
   </component>
 </project>

@@ -35,7 +35,9 @@ function openCallApiThread(){
              }else if(state === "時計"){
                  win?.loadFile('clock/index.html');
              }else if(state === "カレンダー"){
-                 win?.loadFile("https://uic.jp/calendar/2021/01/");
+                 win?.loadURL("https://uic.jp/calendar/2021/01/");
+             }else if(state === "天気"){
+                 win?.loadFile('weather/cloud.html');
              }
          }
          stateData = state;
