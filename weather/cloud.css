@@ -20,6 +20,8 @@ p {
     margin-left: auto;
     text-align: center;
     position: relative;
+    font-size: 150%;
+    z-index: 10;
 }
 
 .cloud {
@@ -36,7 +38,8 @@ p {
   width: 54px;
   height: 5px;
   background: #f7e7eb;
-  top: -300px;
+  top: -500px;
+  z-index: 0;
 }
 .cloud.tiny {
   -moz-transform: scale(0.5, 0.5);
