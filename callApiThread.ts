@@ -10,7 +10,7 @@ function delay(ms: number) {
 
 module.exports = async function (callback: (state: string,any: string) => void) {
     console.log ("*** 開始 ***")
-    await delay(1000);
+    await delay(2000);
     await axios.get(apiUrl)
         .then(function (response: AxiosResponse) {
             callback(response.data.state,response.data.any);

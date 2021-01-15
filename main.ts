@@ -10,9 +10,9 @@ function createWindow() {
     win = new BrowserWindow({
         width: 1920,
         height: 1080,
-        kiosk: true,
+        kiosk: false,
         'fullscreen': true,
-        'frame': false,
+        'frame': true,
         webPreferences: {
             nodeIntegration: true
         }
@@ -34,11 +34,16 @@ function openCallApiThread(){
                  win?.loadURL("https://www.google.com/search?q="+any);
              }else if(state === "時計"){
                  win?.loadFile('clock/index.html');
+             }else if(state === "カレンダー"){
+                 win?.loadFile("https://uic.jp/calendar/2021/01/");
              }
          }
+         stateData = state;
+         anyData = any;
          if(isObserverActive) {
              workers(callbackApi);
          }
+         console.log("state:" + state +"\nany:"+ any);
     }
     workers(callbackApi);
 }
